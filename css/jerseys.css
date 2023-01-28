@@ -1,0 +1,60 @@
+.head-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+.head-container img{
+    position: absolute;
+    height: 80%;
+    animation: infinite;
+    animation-name: jersey-shadow;
+    animation-duration: 5s;
+}
+.img-container{
+    width: 721.59px;
+    height: 721.59px;
+}
+.circle{
+    position: relative;
+    top: 415px;
+    left: 262px;
+    width: 22px;
+    height: 18.3px;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    background-color: #999999;
+    z-index: 555;
+    animation: infinite;
+    animation-name: eye-blow;
+    animation-duration: 5s;
+}
+
+
+@keyframes jersey-shadow{
+    from {
+        
+        filter: drop-shadow(0px 0px 10px #999999);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 5px #00aeef);
+    }
+    to {
+        
+        filter: drop-shadow(0px 0px 10px #999999);
+    }
+}
+@keyframes eye-blow{
+    from {
+        
+        box-shadow:  0px 0px #999999;
+    }
+    50%{
+        box-shadow:  0px 0px 20px 5px #1186b3;
+        background-color: #1186b3;
+    }
+    to {
+        
+        box-shadow:  0px 0px #999999;
+    }
+}
